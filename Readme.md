@@ -40,7 +40,7 @@ You are welcome, please explore the documentation and satiate your query. Also t
 
 
 --
-`   GET /api/v1/like/
+`   POST /api/v1/like/
   `
 
 - Fetches all liked posts by user
@@ -50,18 +50,6 @@ You are welcome, please explore the documentation and satiate your query. Also t
   `
 
 - Deletes a like record.
-
---
-`   PATCH /api/v1/like/:id
-  `
-
-- Updates a like record. Required: id. 
-
---
-`   DELETE /api/v1/rooms/params?
-  `
-
-- Deletes all like for a particular user
 
 
 #### COMMENT
@@ -74,12 +62,6 @@ You are welcome, please explore the documentation and satiate your query. Also t
   `
 
 - create a comment for a post
- 
---
-`   PATCH /api/v1/comment/:id
-  `
-
-- update edits to particular comment
 
 --
 `   DELETE /api/v1/comment/:id
