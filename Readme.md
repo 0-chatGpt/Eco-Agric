@@ -65,21 +65,40 @@ You are welcome, please explore the documentation and satiate your query. Also t
 
 
 #### COMMENT
-## Endpoint: /api/v1/roomsTypes
+## Endpoint: /api/v1/comment
 
 ---
 
 --
-`   GET /api/v1/roomsTypes
+`   POST /api/v1/comment
   `
 
-- Fetches all types of rooms.
+- create a comment for a post
  
 --
-`   POST /api/v1/roomsTypes
+`   PATCH /api/v1/comment/:id
   `
 
-- Creates a new type of room. Only possible options to create are: ["Single", "Double", "Triple", "Studio", "Suite", "Presidential Suite"]. Protected route (ONLY ADMIN)
+- update edits to particular comment
+
+--
+`   DELETE /api/v1/comment/:id
+  `
+
+- deletes particular comment using id
+
+--
+`   GET /api/v1/comment/
+  `
+
+- get all comments for display in comment component of a post
+
+<!-- --
+`   PATCH /api/v1/comment/:id
+  `
+
+- update edits to particular comment -->
+
 
 <!--
  -->
