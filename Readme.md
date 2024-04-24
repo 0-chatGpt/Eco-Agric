@@ -15,13 +15,13 @@ You are welcome, please explore the documentation and satiate your query. Also t
 ---
 
 --
-`   POST /api/v1/bookmark/
+`   GET /api/v1/bookmark/
   `
 
 - User majorly creates a new bookmark record. One record per user
 
 --
-`   POST /api/v1/bookmark/:id
+`   PATCH /api/v1/bookmark/:id
   `
 
 - User updates bookmark stored on database.
@@ -30,44 +30,41 @@ You are welcome, please explore the documentation and satiate your query. Also t
 `   DELETE /api/v1/bookmark/:id
   `
 
-- User deletes their entire bookmarks, for any _un-bookmark_ please use the update api url 
+- User deletes their bookmarks, for any _un-bookmark_ please use the update api url 
 
-<!-- ### Rooms
+#### LIKE
 
-## Endpoint: /api/v1/rooms
+## Endpoint: /api/v1/like
 
 ---
 
---
-`   GET /api/v1/rooms
-  `
-
-- Fetches all rooms | Optional query parameters to filter the rooms by name, roomType and price.
 
 --
-`   GET /api/v1/rooms/:id
+`   GET /api/v1/like/
   `
 
-- Fetches a single room by ID.
+- Fetches all liked posts by user
 
 --
-`   POST /api/v1/rooms/
+`   DELETE /api/v1/like/:id
   `
 
-- Creates a new room. Required: name, roomType and price. Protected route (ONLY ADMIN)
+- Deletes a like record.
 
 --
-`   PATCH /api/v1/rooms/
+`   PATCH /api/v1/like/:id
   `
 
-- Updates a room. Required: id. Optional: name, roomType or price. Protected route (ONLY ADMIN)
+- Updates a like record. Required: id. 
 
 --
-`   DELETE /api/v1/rooms/
+`   DELETE /api/v1/rooms/params?
   `
 
-- Deletes a room. Required: id.
+- Deletes all like for a particular user
 
+
+#### COMMENT
 ## Endpoint: /api/v1/roomsTypes
 
 ---
@@ -84,6 +81,7 @@ You are welcome, please explore the documentation and satiate your query. Also t
 
 - Creates a new type of room. Only possible options to create are: ["Single", "Double", "Triple", "Studio", "Suite", "Presidential Suite"]. Protected route (ONLY ADMIN)
 
+<!--
  -->
 ## License
 
