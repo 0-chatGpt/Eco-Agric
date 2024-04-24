@@ -10,7 +10,7 @@ You are welcome, please explore the documentation and satiate your query. Also t
 
 #### BOOKMARKS
 
-## Endpoint: /api/v1/users
+## Endpoint: /api/v1/bookmark
 
 ---
 
