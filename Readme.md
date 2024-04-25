@@ -75,6 +75,12 @@ You are welcome, please explore the documentation and satiate your query. Also t
 
 - get all comments for display in comment component of a post
 
+--
+`   POST /api/v1/comment/imageUpload
+  `
+
+- handles post image data; upload, delete.
+
 <!-- --
 `   PATCH /api/v1/comment/:id
   `
